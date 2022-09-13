@@ -1,5 +1,7 @@
-package mycodes;
+package SmartCodes;
 
+import SmartCodes.FairTaxCalculation;
+import mycodes.Product;
 import org.junit.jupiter.api.BeforeEach;
 
 import org.junit.jupiter.api.Test;
@@ -7,7 +9,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class FairTaxCalculationTest {
-    private  FairTaxCalculation  fairTaxCalculation;
+    private FairTaxCalculation fairTaxCalculation;
 
     @BeforeEach
     void setup(){
@@ -21,7 +23,7 @@ public class FairTaxCalculationTest {
         //when
         double tax = fairTaxCalculation.calculateTax(product.getPrice());
         //assert
-        assertEquals(23.00, tax);
+        Assertions.assertEquals(23.00, tax);
 
     }
     @Test
@@ -31,7 +33,7 @@ public class FairTaxCalculationTest {
         //when
         double totalPrice = fairTaxCalculation.calculateTotalPrice(100.00);
         //assert
-        assertEquals(150, totalPrice);
+        Assertions.assertEquals(150, totalPrice);
 
 
     }

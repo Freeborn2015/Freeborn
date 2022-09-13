@@ -1,4 +1,4 @@
-package mycodes;
+package SmartCodes;
 
 public class FairTaxException extends Throwable{
     public FairTaxException(String message){

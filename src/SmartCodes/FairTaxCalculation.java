@@ -1,4 +1,4 @@
-package mycodes;
+package SmartCodes;
 
 public class FairTaxCalculation {
     private final double FAIR_TAX_RATE = 23.00;

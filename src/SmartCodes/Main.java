@@ -1,9 +1,11 @@
-package mycodes;
+package SmartCodes;
+
+import mycodes.Product;
 
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) throws  FairTaxException {
+    public static void main(String[] args) throws FairTaxException {
 
         Scanner scanner = new Scanner(System.in);
         FairTaxCalculation fairTaxCalculation = new FairTaxCalculation();
