@@ -8,8 +8,10 @@ public class PetrolPurchase {
     private double amount;
    private double princeInLitres;
    private double netAmount;
+    private double discount;
    private double percentageDiscount;
-    public PetrolPurchase(String location, String name, int quantityInLiters, double princeInLitres, double percentageDiscount ){
+    public PetrolPurchase(String location, String name, int quantityInLiters,
+                          double princeInLitres, double percentageDiscount ){
             this.location = location;
             this.name = name;
             this.quantityInLiters = quantityInLiters;
@@ -50,10 +52,10 @@ public class PetrolPurchase {
     public double getPrinceInLitres(){
         return princeInLitres;
     }
-    private double discount;
+
 
     public double getPercentageDiscount(){
-       return (percentageDiscount / 100);
+      return discount = (percentageDiscount / 100);
     }
     public double getAmount() {
        return amount = (quantityInLiters * princeInLitres) *  getPercentageDiscount();
