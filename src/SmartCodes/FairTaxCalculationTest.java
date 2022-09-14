@@ -1,12 +1,9 @@
 package SmartCodes;
 
-import SmartCodes.FairTaxCalculation;
 import mycodes.Product;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
-
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 public class FairTaxCalculationTest {
     private FairTaxCalculation fairTaxCalculation;
